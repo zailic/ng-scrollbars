@@ -1,16 +1,21 @@
 {
   "name": "ng-scrollbars",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Port of Malihu's jQuery Custom Scrollbar to AngularJS",
-  "format": "cjs",
-  "registry": "github",
-  "main": "index.js",
-  "peerDependencies": {
-    "angular": "^1.4.7"
-  },
+  "format": "global",
+  "registry": "jspm",
+  "main": "dist/scrollbars.min.js",
   "dependencies": {
     "malihu-custom-scrollbar-plugin": "^3.1.2",
     "angular": "^1.4.7"
+  },
+  "shim": {
+    "dist/scrollbars.min": {
+      "deps": [
+        "malihu-custom-scrollbar-plugin",
+        "angular"
+      ]
+    }
   },
   "devDependencies": {
     "gulp": "^3.9.0",
