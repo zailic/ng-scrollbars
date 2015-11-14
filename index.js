@@ -1,4 +1,4 @@
-// Should already be required, here for clarity
 require("angular");
-require("src/scrollbars");
+require("malihu-custom-scrollbar-plugin");
+require("dist/scrollbars.min.js");
 module.exports="ngScrollbars";
